@@ -140,6 +140,9 @@ class RCTPlayerObserver: NSObject {
     
     func addPlayerTimeObserver() {
         removePlayerTimeObserver()
+        if (_progressUpdateInterval <= 0) {
+            return;
+        }
         let progressUpdateIntervalMS:Float64 = _progressUpdateInterval / 1000
         // @see endScrubbing in AVPlayerDemoPlaybackViewController.m
         // of https://developer.apple.com/library/ios/samplecode/AVPlayerDemo/Introduction/Intro.html
