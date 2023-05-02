@@ -311,7 +311,7 @@ class RCTVideo: UIView, RCTVideoPlayerViewControllerDelegate, RCTPlayerObserverH
 
                     self._player = self._player ?? AVPlayer()
                     DispatchQueue.global(qos: .default).async {
-                        self._player?.replaceCurrentItem(with: playerItem) 
+                        self._player?.replaceCurrentItem(with: playerItem)
                     }
                     self._playerObserver.player = self._player
                     self.applyModifiers()
