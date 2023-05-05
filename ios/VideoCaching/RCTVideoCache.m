@@ -1,4 +1,5 @@
 #import "RCTVideoCache.h"
+#import <React/RCTLog.h>
 
 @implementation RCTVideoCache
 
